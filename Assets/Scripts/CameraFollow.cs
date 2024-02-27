@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         // Calculate the initial offset between the camera and the target
-        offset = transform.position - target.position;
+        offset = (transform.position - new Vector3(0,1,0)) - target.position;
     }
 
     void FixedUpdate()

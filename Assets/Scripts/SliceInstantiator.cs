@@ -6,8 +6,8 @@ public class SliceInstantiator : MonoBehaviour
 {
     List<int> stickySlices; // List to keep track of which slices are sticky
 
-    [Header("Cylinder Prefab")]
-    [SerializeField] Transform cylinder; // The parent object where slices will be instantiated
+    [Header("Shaft Prefab")]
+    [SerializeField] Transform shaft; // The parent object where slices will be instantiated
 
     [SerializeField] GameObject scoreSensor; // The sensor object for scoring
 
@@ -48,11 +48,11 @@ public class SliceInstantiator : MonoBehaviour
 
                 // Instantiate a sticky slice if the slot matches one in the sticky slices list
                 if (k == stickySlices[0])
-                    Instantiate(stickySlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(cylinder);
+                    Instantiate(stickySlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(shaft);
                 else if (k == stickySlices[1])
-                    Instantiate(stickySlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(cylinder);
+                    Instantiate(stickySlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(shaft);
                 else // Otherwise, instantiate a normal slice
-                    Instantiate(normalSlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(cylinder);
+                    Instantiate(normalSlice, new Vector3(0, i, 0), Quaternion.Euler(0, k * 45, 90)).transform.SetParent(shaft);
             }
             stickySlices.Clear(); // Clear the list of sticky slices for the next row
         }
