@@ -1,2 +1,2 @@
 # Helix_Jump
-This game was created using C# Arrays for different plane sets.
+This game is based on programming not level design.
