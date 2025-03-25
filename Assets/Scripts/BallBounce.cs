@@ -15,7 +15,7 @@ public class BallBounce : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        rb.velocity = Vector3.up * bounceForce * Time.deltaTime; // Apply upward force when the ball collides
+        rb.linearVelocity = Vector3.up * bounceForce * Time.deltaTime; // Apply upward force when the ball collides
 
         if (collision.gameObject.CompareTag("Sticky"))
         {
