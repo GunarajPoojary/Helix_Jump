@@ -1,40 +1,88 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+using HelixJump.Events;
+using HelixJump.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace HelixJump.Core
 {
-    // Singleton instance of the GameManager.
-    public static GameManager Instance;
-
-    // TextMeshProUGUI objects for displaying win and lose messages.
-    public TextMeshProUGUI winText;
-    public TextMeshProUGUI loseText;
-
-    public int score = 0; // Current score
-    public bool gameIsActive = true; // Flag to indicate if the game is active
-
-    // Awake is called when the script instance is being loaded.
-    void Awake()
+    public class GameManager : MonoBehaviour
     {
-        // Ensure that there is only one instance of GameManager.
-        if (Instance == null)
-            Instance = this;
-    }
+        [Header("Game Settings")]
+        [SerializeField] private GameEvents _gameEvents;
+        [SerializeField] private GameUIManager _gameUIManager;
+        [SerializeField] private int _score = 1;
+        [SerializeField] private int _consecutiveScore = 10;
+        [SerializeField] private int _consecutiveRange = 3;
 
-    // Method to display win message for Player 1.
-    public void Win()
-    {
-        // Activate the winText object.
-        winText.gameObject.SetActive(true);
-    }
+        private bool _isGameActive = false;
+        private int _currentScore = 0;
+        private int _consecutives = 0;
 
-    // Method to display lose message for Player 1.
-    public void Lose()
-    {
-        // Activate the loseText object.
-        loseText.gameObject.SetActive(true);
+        private void OnEnable()
+        {
+            _gameEvents.ScoreEvent.OnEventRaised += AddScore;
+            _gameEvents.BounceEvent.OnEventRaised += ResetConsecutive;
+            _gameEvents.GameCompleteEvent.OnEventRaised += WinGame;
+            _gameEvents.LoseGameEvent.OnEventRaised += LoseGame;
+            _gameEvents.RestartGameEvent.OnEventRaised += RestartGame;
+            _gameEvents.ExitGameEvent.OnEventRaised += ExitGame;
+        }
+
+        private void OnDisable()
+        {
+            _gameEvents.ScoreEvent.OnEventRaised -= AddScore;
+            _gameEvents.BounceEvent.OnEventRaised -= ResetConsecutive;
+            _gameEvents.GameCompleteEvent.OnEventRaised -= WinGame;
+            _gameEvents.LoseGameEvent.OnEventRaised -= LoseGame;
+            _gameEvents.RestartGameEvent.OnEventRaised -= RestartGame;
+            _gameEvents.ExitGameEvent.OnEventRaised -= ExitGame;
+        }
+
+        private void Start()
+        {
+            _gameEvents.GameActiveEvent.RaiseEvent(true);
+            _gameUIManager.UpdateScoreUI(_currentScore);
+        }
+
+        private void ResetConsecutive() => _consecutives = 0;
+
+        private void AddScore()
+        {
+            if (!_isGameActive)
+            {
+                if (_consecutives >= _consecutiveRange)
+                    _currentScore += _consecutiveScore;
+                else
+                    _currentScore += _score;
+
+                _gameUIManager.UpdateScoreUI(_currentScore);
+                _consecutives++;
+            }
+        }
+
+        private void LoseGame()
+        {
+            if (_isGameActive) return;
+
+            _isGameActive = true;
+
+            _gameUIManager.ShowResultPanel(false, _currentScore);
+
+            _gameEvents.GameActiveEvent.RaiseEvent(false);
+        }
+
+        private void WinGame()
+        {
+            if (_isGameActive) return;
+
+            _isGameActive = true;
+
+            _gameUIManager.ShowResultPanel(true, _currentScore);
+
+            _gameEvents.GameActiveEvent.RaiseEvent(false);
+        }
+
+        private void RestartGame() => SceneManager.LoadScene(1);
+        private void ExitGame() => Application.Quit();
     }
 }

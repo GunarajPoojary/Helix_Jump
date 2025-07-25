@@ -1,0 +1,23 @@
+# ninja log v5
+159	1485	7750632270845978	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d43f63ee87d3077b
+51	6389	7750632320371654	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	75fcd98a3b3eb5a7
+1486	2358	7750632279249664	C:/_Game Development/Projects/Helix Jump/Helix_Jump/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z5t6s24/obj/arm64-v8a/libswappywrapper.so	592cd08374d06f46
+68	5176	7750632308106393	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3d1f687d9a357143
+90	5144	7750632307786602	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	abcbb7aa8fc39bd1
+126	5285	7750632309169895	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8f60b68cfcaa4985
+36	5453	7750632310711784	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	282614982d3b710e
+24	5269	7750632308915105	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fd3e48c56f184372
+142	6312	7750632319341909	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	abc18e0614ca4531
+105	6098	7750632317285780	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	29819414738f497f
+6390	6650	7750632323037891	C:/_Game Development/Projects/Helix Jump/Helix_Jump/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z5t6s24/obj/arm64-v8a/libgame.so	41110df3d919f103
+153	1403	7751597400705300	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d43f63ee87d3077b
+1404	1972	7751597406353308	C:/_Game Development/Projects/Helix Jump/Helix_Jump/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z5t6s24/obj/arm64-v8a/libswappywrapper.so	592cd08374d06f46
+43	14397	7751597529769557	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3d1f687d9a357143
+94	14411	7751597529729658	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	abcbb7aa8fc39bd1
+80	14421	7751597529939084	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fd3e48c56f184372
+108	14440	7751597530477675	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8f60b68cfcaa4985
+70	14566	7751597532105636	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	282614982d3b710e
+139	15203	7751597538605270	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	abc18e0614ca4531
+123	15224	7751597538825998	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	29819414738f497f
+62	15392	7751597540465908	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	75fcd98a3b3eb5a7
+15392	15770	7751597544366653	C:/_Game Development/Projects/Helix Jump/Helix_Jump/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z5t6s24/obj/arm64-v8a/libgame.so	41110df3d919f103
