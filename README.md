@@ -6,7 +6,7 @@ The player controls a bouncing ball that descends through a helix tower while av
 ## Gameplay
 ![Helix Jump Demo](Media/HelixJumpGIF.gif)  
 
-## Setup & Installation
+## Download & Installation
 On Android, you may see a warning since this game is not from the Play Store. 
 The APK is safe to install as it is signed with a release keystore.
 <a href="https://drive.google.com/file/d/1SfYECvrwkyz1X6BIIxg6snR4CBkjL5B2/view?usp=sharing">
