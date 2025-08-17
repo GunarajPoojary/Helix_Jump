@@ -12,6 +12,10 @@ The player controls a bouncing ball that descends through a helix tower while av
 ## Gameplay
 ![Helix Jump Demo](Media/HelixJumpGIF.gif)  
 
+## Setup & Installation
+On Android, you may see a warning since this game is not from the Play Store. 
+The APK is safe to install as it is signed with a release keystore.
+
 ## Features
 - Smooth ball physics and bounce mechanics  
 - Rotating helix tower  
@@ -30,7 +34,3 @@ The player controls a bouncing ball that descends through a helix tower while av
 - **Engine:** Unity 6  
 - **Language:** C#  
 - **Platform:** Android  
-
-## Setup & Installation
-- On Android, you may see a warning since this game is not from the Play Store.
-- The APK is safe to install as it is signed with a release keystore.
