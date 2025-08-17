@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Gunaraj
   productName: Helix Jump
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -163,6 +163,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
+    Android: com.gunaraj.helixjump
     Standalone: com.DefaultCompany.2D-Project
   buildNumber:
     Standalone: 0
@@ -264,8 +265,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/_Game Development/Projects/Helix Jump/Keystore/user.keystore
-  AndroidKeyaliasName: helixreleasekey
+  AndroidKeystoreName: C:/_Game Development/Projects/HelixJumpKeystore/user.keystore
+  AndroidKeyaliasName: helix jump
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
   AndroidBuildApkPerCpuArchitecture: 0
