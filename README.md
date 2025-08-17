@@ -3,7 +3,7 @@
 A simple **Helix Jump** style game built with Unity and C#.  
 The player controls a bouncing ball that descends through a helix tower while avoiding obstacles.
 
-## Play on Itch.io
+## Download
 
 <a href="https://aether07.itch.io/">
   <img src="https://static.itch.io/images/app-icon.png" width="42" />
