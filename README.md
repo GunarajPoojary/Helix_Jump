@@ -1,4 +1,4 @@
-# Helix Jump Clone (Unity)
+# Helix Jump Clone for Android
 
 A simple **Helix Jump** style game built with Unity and C#.  
 The player controls a bouncing ball that descends through a helix tower while avoiding obstacles.
