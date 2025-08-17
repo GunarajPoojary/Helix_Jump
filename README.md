@@ -6,7 +6,7 @@ The player controls a bouncing ball that descends through a helix tower while av
 ---
 
 ## 📸 Screenshots
-Media/HelixJumpGIF.gif  
+![Helix Jump Demo](Media/HelixJumpGIF.gif)  
 
 ---
 
