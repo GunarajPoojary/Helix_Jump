@@ -5,7 +5,13 @@ The player controls a bouncing ball that descends through a helix tower while av
 
 ---
 
-## 📸 Screenshots
+## 🎮 Play on Itch.io
+
+[![Play on Itch.io](https://static.itch.io/images/logo-black.svg)](https://aether07.itch.io/)
+
+---
+
+## 📸 Gameplay
 ![Helix Jump Demo](Media/HelixJumpGIF.gif)  
 
 ---
