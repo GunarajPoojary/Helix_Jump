@@ -7,7 +7,7 @@ The player controls a bouncing ball that descends through a helix tower while av
 
 ## 🎮 Play on Itch.io
 
-[![Itch.io](https://static.itch.io/images/app-icon.png) **Play Here**](https://aether07.itch.io/)
+[![Play on Itch.io](https://img.shields.io/badge/Play%20on-Itch.io-FA5C5C?logo=itch.io&logoColor=white)](https://aether07.itch.io/)
 
 ---
 
